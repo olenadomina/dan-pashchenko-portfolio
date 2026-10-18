@@ -1,0 +1,132 @@
+.mac-view{max-width:800px;margin:0 auto;padding:34px 38px 42px;color:var(--mac-text);min-width:0;font-size:13px;line-height:1.5}
+.mac-view h1,.mac-view h2,.mac-view p,.mac-view dl,.mac-view dd,.mac-view ul,.mac-view figure{margin:0}
+.mac-view ul{padding:0;list-style:none}
+.mac-view a{color:var(--mac-accent);text-decoration:none}
+.mac-view button,.mac-view input{font:inherit}
+.mac-view button{cursor:pointer}
+.mac-view :is(button,a,input):focus-visible{outline:3px solid color-mix(in srgb,var(--mac-accent) 55%,transparent);outline-offset:3px}
+.mac-view svg{width:18px;height:18px;flex-shrink:0}
+.mac-view-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:25px}
+.mac-view h1{font-size:27px;line-height:1.2;font-weight:700;letter-spacing:-.65px}
+.mac-view-heading p{color:var(--mac-muted);margin-top:6px;font-size:13px;line-height:1.55}
+.mac-content-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--mac-line);border-radius:6px;background:var(--mac-panel);box-shadow:0 1px 2px #0000000d;min-height:30px;padding:4px 11px;color:var(--mac-text);font-size:12px;font-weight:500;line-height:1.4;white-space:nowrap;transition:background-color 120ms ease,box-shadow 120ms ease}
+.mac-view a.mac-content-button{color:var(--mac-text)}
+.mac-view a.mac-content-button-primary{color:#fff}
+.mac-content-button:hover{background:var(--mac-hover);box-shadow:0 1px 3px #00000015}
+.mac-content-button:active{box-shadow:none;background:var(--mac-soft)}
+.mac-content-button svg{width:15px;height:15px}
+.mac-content-button.mac-content-button-primary{background:var(--mac-accent);color:#fff;border-color:color-mix(in srgb,var(--mac-accent) 84%,#000);box-shadow:inset 0 1px #ffffff18,0 1px 2px #00000012}
+.mac-content-button.mac-content-button-primary:hover{background:color-mix(in srgb,var(--mac-accent) 88%,#000)}
+.mac-file-type{font-size:10px;color:var(--mac-muted);padding-left:3px;font-weight:500}
+.mac-content-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:17px}
+.mac-grouped-panel{background:var(--mac-panel);border:1px solid var(--mac-line);border-radius:10px;overflow:hidden}
+.mac-profile-intro{display:flex;align-items:center;gap:23px}
+.mac-profile-photo{display:block;width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:50% 37%;border:1px solid #00000012;flex-shrink:0}
+.mac-profile-photo-large{width:100px;height:100px}
+.mac-profile-identity{min-width:0}
+.mac-profile-kicker{font-size:12px;color:var(--mac-muted);margin-bottom:4px!important}
+.mac-profile-identity h1{font-size:30px;letter-spacing:-.8px}
+.mac-profile-promise{font-size:13px;color:var(--mac-muted);margin-top:8px!important}
+.mac-overview-description{margin-top:23px!important;max-width:61ch;font-size:14px;line-height:1.65}
+.mac-experience-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--mac-panel);border:1px solid var(--mac-line);border-radius:10px;padding:16px 0;margin-top:27px!important}
+.mac-experience-strip>div{text-align:center;padding:0 8px}
+.mac-experience-strip>div+div{border-left:1px solid var(--mac-line)}
+.mac-experience-strip dd{font-size:25px;font-weight:600;letter-spacing:-.8px;line-height:1.2;font-variant-numeric:tabular-nums}
+.mac-experience-strip dt{font-size:11px;color:var(--mac-muted);margin-top:5px}
+.mac-content-section{margin-top:27px}
+.mac-content-section-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 2px 8px;min-height:21px}
+.mac-content-section-heading h2{font-size:13px;font-weight:600;letter-spacing:-.12px}
+.mac-section-caption{font-size:11px;color:var(--mac-muted)}
+.mac-inline-action{display:inline-flex;align-items:center;gap:1px;border:0;background:none;color:var(--mac-accent);font-size:12px;padding:3px 0}
+.mac-inline-action:hover{color:color-mix(in srgb,var(--mac-accent) 76%,var(--mac-text))}
+.mac-inline-action svg{width:13px;height:13px}
+.mac-app-row,.mac-detail-row{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px;border:0;background:transparent;text-align:left;color:var(--mac-text)}
+.mac-app-row+.mac-app-row,.mac-detail-row+.mac-detail-row{border-top:1px solid var(--mac-line)}
+.mac-app-row:hover,.mac-detail-row:hover{background:var(--mac-hover)}
+.mac-app-row>img{width:44px;height:44px;border-radius:10px;flex-shrink:0;box-shadow:0 0 0 1px #00000008}
+.mac-row-copy{display:flex;flex:1;flex-direction:column;min-width:0;text-align:left}
+.mac-row-copy strong{font-size:13px;font-weight:500;color:var(--mac-text)}
+.mac-row-copy>span{font-size:11px;line-height:1.55;margin-top:2px;color:var(--mac-muted)}
+.mac-row-platform{font-size:11px;color:var(--mac-muted);margin-left:auto}
+.mac-app-row>svg,.mac-detail-row>svg{width:14px;height:14px;color:var(--mac-muted)}
+.mac-section-footnote{font-size:11px;line-height:1.55;color:var(--mac-muted);padding:8px 3px 0}
+.mac-row-symbol{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:7px;background:color-mix(in srgb,var(--mac-accent) 11%,var(--mac-panel));color:var(--mac-accent);flex-shrink:0}
+.mac-row-symbol svg{width:18px;height:18px}
+.mac-app-segments{display:flex;width:100%;padding:3px;gap:3px;border:1px solid var(--mac-line);border-radius:7px;background:var(--mac-soft);margin-bottom:20px}
+.mac-app-segments button{position:relative;flex:1;min-width:0;min-height:29px;padding:5px 12px;border:1px solid transparent;border-radius:5px;background:transparent;color:var(--mac-text);font-size:12px;font-weight:500;line-height:1.4}
+.mac-app-segments button:hover{background:var(--mac-hover)}
+.mac-app-segments button[aria-pressed=true]{background:var(--mac-panel);border-color:var(--mac-line);box-shadow:0 1px 3px #00000016}
+.mac-project-summary{padding:22px}
+.mac-project-identity{display:flex;align-items:center;gap:14px}
+.mac-project-identity>img{width:60px;height:60px;border-radius:14px;flex-shrink:0;box-shadow:0 0 0 1px #0000000a}
+.mac-project-identity h2{font-size:21px;font-weight:650;line-height:1.25;letter-spacing:-.4px}
+.mac-project-identity p{font-size:12px;color:var(--mac-muted);margin-top:4px}
+.mac-platform-label{font-size:11px;color:var(--mac-muted);border:1px solid var(--mac-line);border-radius:4px;padding:2px 6px;margin-left:auto}
+.mac-project-description{font-size:13px;line-height:1.7;margin-top:19px!important;max-width:66ch}
+.mac-project-details{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:20px}
+.mac-project-tags{display:flex;flex-wrap:wrap;gap:6px}
+.mac-project-tags li{font-size:10px;padding:3px 7px;border-radius:5px;color:var(--mac-muted);background:var(--mac-soft)}
+.mac-preview-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;justify-items:center;gap:26px;padding:28px 32px 23px;background:var(--mac-soft)}
+.mac-app-preview{width:100%;max-width:210px;min-width:0}
+.mac-phone-preview{background:#1b1b1e;border:1px solid #65656b;padding:5px;border-radius:14% / 6.5%;position:relative;box-shadow:0 9px 19px -11px #00000070}
+.mac-phone-preview>img{display:block;width:100%;height:auto;border-radius:11.5% / 5.3%}
+.mac-phone-preview::after{content:"";position:absolute;top:2.4%;left:37%;width:26%;height:2.8%;border-radius:30px;background:#131719;pointer-events:none}
+.mac-phone-preview-cropped{border-radius:calc(19.2308% + 4.31px) / calc(8.8594% + 5.76px)}
+.mac-phone-preview-cropped::after{display:none}
+.mac-phone-screen{position:relative;overflow:hidden;border-radius:19.2308% / 8.8594%;background:#f7f6f0}
+.mac-phone-screen>img{display:block;position:absolute;max-width:none;height:auto;border-radius:0}
+.mac-app-preview figcaption{font-size:11px;line-height:1.45;text-align:center;color:var(--mac-muted);margin-top:13px;text-wrap:balance}
+.mac-content-lead{font-size:14px;line-height:1.7;max-width:66ch;margin-bottom:24px!important}
+.mac-capability-row{display:flex;align-items:flex-start;gap:13px;padding:18px}
+.mac-capability-row+.mac-capability-row{border-top:1px solid var(--mac-line)}
+.mac-capability-row h2{font-size:13px;font-weight:600;line-height:1.45}
+.mac-capability-row p{font-size:12px;line-height:1.65;color:var(--mac-muted);margin-top:4px}
+.mac-profile-link{display:flex;align-items:center;gap:12px;padding:15px;margin-top:20px;color:var(--mac-text)!important}
+.mac-profile-link:hover{background:var(--mac-hover)}
+.mac-profile-link>img{flex-shrink:0;margin:0 4px}
+.mac-profile-link>svg{width:15px;height:15px;color:var(--mac-muted)}
+.mac-skills-search-row{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.mac-content-search{display:flex;align-items:center;gap:6px;width:100%;max-width:390px;min-height:31px;border:1px solid var(--mac-line);border-radius:6px;background:var(--mac-panel);box-shadow:inset 0 1px 2px #00000005;padding:5px 8px}
+.mac-content-search>svg{width:15px;height:15px;color:var(--mac-muted)}
+.mac-content-search:focus-within{outline:3px solid color-mix(in srgb,var(--mac-accent) 40%,transparent);outline-offset:1px}
+.mac-content-search input{width:100%;min-width:0;border:0;background:transparent;color:var(--mac-text);padding:0;font-size:12px;line-height:1.5;outline:none!important}
+.mac-content-search input::placeholder{color:var(--mac-muted);opacity:1}
+.mac-search-result-count{font-size:11px;color:var(--mac-muted);white-space:nowrap;margin-left:auto;font-variant-numeric:tabular-nums}
+.mac-skill-categories{display:grid;gap:13px}
+.mac-skill-category{padding:14px 16px 16px}
+.mac-skill-category-heading{display:flex;align-items:center;gap:10px;margin-bottom:13px}
+.mac-skill-category-heading .mac-row-symbol{width:27px;height:27px;border-radius:6px}
+.mac-skill-category-heading .mac-row-symbol svg{width:16px;height:16px}
+.mac-skill-category-heading h2{font-size:13px;font-weight:600}
+.mac-skill-category-heading>span:last-child{font-size:11px;color:var(--mac-muted);margin-left:auto}
+.mac-skill-tokens{display:flex;flex-wrap:wrap;gap:7px}
+.mac-skill-tokens li{background:var(--mac-soft);border:1px solid var(--mac-line);border-radius:5px;padding:4px 8px;font-size:11px;line-height:1.4;color:var(--mac-text);max-width:100%;overflow-wrap:anywhere}
+.mac-skills-empty{display:flex;align-items:center;flex-direction:column;text-align:center;padding:48px 16px}
+.mac-skills-empty>svg{width:32px;height:32px;color:var(--mac-muted);margin-bottom:15px}
+.mac-skills-empty h2{font-size:16px;font-weight:600}
+.mac-skills-empty p{font-size:12px;color:var(--mac-muted);margin-top:5px}
+.mac-skills-empty .mac-content-button{margin-top:17px}
+.mac-contact-person{display:flex;align-items:center;flex-direction:column;text-align:center;margin-top:29px}
+.mac-contact-person h2{font-size:22px;letter-spacing:-.5px;font-weight:600;margin-top:14px}
+.mac-contact-person p{font-size:12px;color:var(--mac-muted);margin-top:3px}
+.mac-contact-intro{text-align:center;margin-top:15px!important;font-size:13px;color:var(--mac-muted)}
+.mac-contact-email-row,.mac-contact-profile-row{display:flex;align-items:center;gap:16px;min-height:47px;padding:9px 14px;font-size:12px}
+.mac-contact-email-row>a{overflow-wrap:anywhere;min-width:0;flex:1;user-select:text}
+.mac-contact-field-label{flex:0 0 67px;color:var(--mac-muted);text-align:right;font-size:11px}
+.mac-contact-profile-row{border-top:1px solid var(--mac-line)}
+.mac-contact-profile-row:hover{background:var(--mac-hover)}
+.mac-contact-profile-row>span:nth-child(2){flex:1;overflow-wrap:anywhere}
+.mac-contact-profile-row>svg{width:14px;height:14px;color:var(--mac-muted)}
+.mac-content-icon-button{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:28px;height:28px;border:1px solid var(--mac-line);border-radius:5px;background:var(--mac-panel);color:var(--mac-muted);padding:4px}
+.mac-content-icon-button>svg{width:15px;height:15px}
+.mac-content-icon-button:hover{background:var(--mac-hover);color:var(--mac-accent)}
+.mac-content-icon-button:disabled{cursor:wait;opacity:.5}
+.mac-copy-status{font-size:11px;color:var(--mac-muted);display:flex;align-items:center;justify-content:center;gap:5px;min-height:30px;padding:7px 3px 0}
+.mac-copy-status svg{width:13px;height:13px;color:var(--mac-accent)}
+.mac-copy-status-error{color:var(--mac-text);text-align:center}
+.mac-contact-resume{margin-top:8px}
+.mac-contact-resume .mac-profile-link{margin-top:0}
+@media(max-width:900px){.mac-view{padding:28px 27px 36px}.mac-profile-identity h1{font-size:27px}.mac-profile-intro{gap:18px}.mac-profile-photo-large{width:90px;height:90px}.mac-preview-gallery{gap:24px;padding:25px 28px 22px}.mac-project-summary{padding:20px}}
+@media(max-width:600px){.mac-view{padding:24px 18px 32px}.mac-view h1{font-size:25px;letter-spacing:-.55px}.mac-view-heading{margin-bottom:22px;align-items:flex-start;flex-wrap:wrap;gap:12px}.mac-profile-intro{gap:15px;align-items:center}.mac-profile-photo-large{width:76px;height:76px}.mac-profile-identity h1{font-size:24px;line-height:1.18}.mac-profile-kicker{font-size:11px;line-height:1.4}.mac-profile-promise{font-size:11px;line-height:1.45;margin-top:6px!important}.mac-overview-description{font-size:13px;margin-top:21px!important}.mac-content-actions{gap:8px}.mac-experience-strip{margin-top:24px!important;padding:14px 0}.mac-experience-strip dd{font-size:23px}.mac-experience-strip dt{font-size:10px;line-height:1.4}.mac-experience-strip>div{padding:0 5px}.mac-content-section{margin-top:24px}.mac-app-row{padding:11px 12px;gap:10px}.mac-detail-row{padding:12px;gap:10px}.mac-row-platform{display:none}.mac-row-copy strong{font-size:12px}.mac-row-copy>span{font-size:10px}.mac-app-segments button{padding:5px 4px;font-size:11px}.mac-project-summary{padding:17px}.mac-project-identity{gap:11px}.mac-project-identity>img{width:50px;height:50px;border-radius:12px}.mac-project-identity h2{font-size:19px}.mac-project-identity p{font-size:11px}.mac-project-description{font-size:12px;margin-top:16px!important}.mac-project-details{gap:14px;margin-top:17px}.mac-preview-gallery{padding:23px 17px 20px;gap:18px}.mac-phone-preview{padding:3px}.mac-app-preview figcaption{font-size:10px}.mac-content-lead{font-size:13px;line-height:1.7}.mac-capability-row{padding:15px 13px;gap:11px}.mac-capability-row h2{font-size:12px}.mac-capability-row p{font-size:11px}.mac-capability-row .mac-row-symbol{width:27px;height:27px;border-radius:6px}.mac-capability-row .mac-row-symbol>svg{width:16px;height:16px}.mac-profile-link{padding:13px 12px;gap:10px}.mac-skill-category{padding:13px}.mac-skill-category-heading{gap:9px}.mac-skill-category-heading h2{font-size:12px}.mac-skill-tokens{gap:6px}.mac-skill-tokens li{font-size:10px;padding:4px 7px}.mac-skills-search-row{gap:10px}.mac-search-result-count{font-size:10px}.mac-contact-person{margin-top:25px}.mac-contact-person .mac-profile-photo{width:90px;height:90px}.mac-contact-person h2{font-size:21px}.mac-contact-intro{font-size:12px;line-height:1.6;padding-inline:6px}.mac-contact-email-row,.mac-contact-profile-row{padding:10px 11px;gap:10px;font-size:11px}.mac-contact-field-label{flex-basis:46px;font-size:10px}.mac-contact-email-row{flex-wrap:wrap}.mac-contact-email-row .mac-contact-field-label{flex-basis:100%;text-align:left}.mac-contact-email-row>a{font-size:12px}.mac-content-icon-button{width:28px;height:28px}.mac-contact-resume{margin-top:8px}}
+@media(max-width:360px){.mac-view{padding-inline:14px}.mac-profile-intro{gap:12px}.mac-profile-photo-large{width:64px;height:64px}.mac-profile-identity h1{font-size:22px}.mac-profile-promise{font-size:10px}.mac-content-button{padding-inline:9px;font-size:11px}.mac-preview-gallery{gap:12px;padding-inline:12px}.mac-project-identity h2{font-size:17px}.mac-platform-label{font-size:10px;padding:1px 4px}.mac-project-identity>img{width:44px;height:44px;border-radius:10px}.mac-skill-category-heading h2{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.mac-view *{transition:none!important;animation:none!important}}
