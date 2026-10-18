@@ -1,0 +1,11 @@
+.contact-email{position:relative;display:inline-grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;column-gap:14px;max-width:100%;min-width:0}
+.contact-email-address{display:block;min-width:0;padding:8px 0;font-size:clamp(18px,2.2vw,28px);font-weight:500;line-height:1.4;letter-spacing:-.025em;color:var(--chalk,#e8edf2);text-decoration:none;overflow-wrap:anywhere;transition:color 160ms ease}
+.contact-email-copy{width:44px;height:44px;padding:0;display:grid;place-items:center;appearance:none;border:0;border-radius:6px;background:transparent;color:#aebfcd;cursor:pointer;transition:color 160ms ease}
+.contact-email-copy svg{width:20px;height:20px;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.contact-email-copy.is-copied{color:#a7c5bc}
+.contact-email-copy:disabled{cursor:wait}
+.contact-email-feedback{position:absolute;top:calc(100% + 8px);left:0;right:0;font-size:12px;font-weight:400;line-height:1.5;color:#a7c5bc}
+.contact-email-feedback.is-error{color:#d9d2bb}
+@media(hover:hover) and (pointer:fine){.contact-email-address:hover{color:#fff;text-decoration:none}.contact-email-copy:hover{color:#fff}}
+@media(max-width:760px){.contact-email{column-gap:8px}.contact-email-address{font-size:clamp(14px,4.2vw,18px)}}
+@media(prefers-reduced-motion:reduce){.contact-email-address,.contact-email-copy{transition:none}}

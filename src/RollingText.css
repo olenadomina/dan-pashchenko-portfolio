@@ -1,0 +1,20 @@
+.rolling-text{display:block;height:1.6em;line-height:1.6;overflow:hidden}
+.rolling-text-track{display:block;transition:transform 420ms cubic-bezier(.45,0,.2,1)}
+.rolling-text-track>span{display:block;white-space:nowrap}
+.roll-link{transition:color 360ms ease}
+.roll-link:focus-visible .rolling-text-track{transform:translateY(-50%)}
+.site-header nav>a.roll-link:focus-visible{color:#a7c5bc;text-decoration:none}
+.site-header nav>.nav-contact.roll-link:focus-visible{color:#2d6661}
+.expertise-profile.roll-link:focus-visible{color:#2d6661;text-decoration:none}
+.contact-email-address.roll-link:focus-visible{color:#a7c5bc}
+@media(hover:hover) and (pointer:fine){
+  .roll-link:hover .rolling-text-track{transform:translateY(-50%)}
+  .site-header nav>a.roll-link:hover{color:#a7c5bc;text-decoration:none}
+  .site-header nav>.nav-contact.roll-link:hover{color:#2d6661}
+  .expertise-profile.roll-link:hover{color:#2d6661;text-decoration:none}
+  .contact-email-address.roll-link:hover{color:#a7c5bc}
+}
+@media(prefers-reduced-motion:reduce){
+  .roll-link,.rolling-text-track{transition:none}
+  .roll-link:is(:hover,:focus-visible) .rolling-text-track{transform:none}
+}

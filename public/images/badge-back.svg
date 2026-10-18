@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1440" viewBox="0 0 1024 1440">
+<rect width="1024" height="1440" fill="#e7e9eb"/><rect width="1024" height="210" fill="#25313d"/>
+<text x="960" y="155" text-anchor="end" fill="#f1f3f5" font-family="Arial,sans-serif" font-size="26" letter-spacing="2">iOS ENGINEERING</text>
+<text x="64" y="360" fill="#1e2933" font-family="Arial,sans-serif" font-size="68" font-weight="700" letter-spacing="-2">Native apps.</text>
+<text x="64" y="445" fill="#1e2933" font-family="Arial,sans-serif" font-size="68" font-weight="700" letter-spacing="-2">Reliable foundations.</text>
+<g fill="#344351" font-family="Arial,sans-serif" font-size="40"><text x="64" y="625">Native iOS</text><text x="64" y="758">SwiftUI &amp; UIKit</text><text x="64" y="891">Image &amp; video</text><text x="64" y="1024">App architecture</text></g>
+<g stroke="#bbc2c9" stroke-width="2"><path d="M64 668H960"/><path d="M64 801H960"/><path d="M64 934H960"/><path d="M64 1067H960"/></g>
+<text x="64" y="1192" fill="#1e2933" font-family="Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="1.5">DAN PASHCHENKO</text>
+<text x="64" y="1253" fill="#596773" font-family="Arial,sans-serif" font-size="25">Independent iOS Engineer</text>
+</svg>

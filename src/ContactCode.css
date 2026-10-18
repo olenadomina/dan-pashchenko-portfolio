@@ -1,0 +1,143 @@
+.contact-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.contact-section > :not(.contact-code) {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-code {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  mask-image: linear-gradient(90deg, transparent 28%, #000 66%, #000 88%, transparent), linear-gradient(transparent, #000 18%, #000 78%, transparent 99%);
+  mask-composite: intersect;
+}
+
+.contact-code-editor {
+  position: absolute;
+  top: 0;
+  left: 43%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: max-content;
+  min-width: 700px;
+  min-height: 200%;
+  color: #c7d8d4;
+  opacity: .12;
+  font: 400 clamp(14px, 1.45vw, 22px) / 1.9 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: -.025em;
+  transform: translate3d(0, 0, 0);
+  animation: contact-code-scroll 80s linear -6s infinite;
+}
+
+.contact-code-file {
+  padding: 12px 0 12px 72px;
+  color: #b6c6d2;
+  border-bottom: 1px solid #c1d3e2;
+  font-size: .74em;
+}
+
+.contact-code-lines {
+  padding-top: 18px;
+}
+
+.contact-code-line {
+  display: flex;
+  min-height: 1.9em;
+}
+
+.contact-code-number {
+  flex: 0 0 54px;
+  padding-right: 17px;
+  margin-right: 18px;
+  text-align: right;
+  color: #a8bacb;
+  border-right: 1px solid #9bb4cb;
+  opacity: .6;
+  font-size: .85em;
+}
+
+.contact-code-line code {
+  font: inherit;
+  white-space: pre;
+}
+
+.contact-code-keyword { color: #b0c7cb; }
+.contact-code-type { color: #b4cdc7; }
+.contact-code-value { color: #ced2bd; }
+.contact-code-line-current { background: #c1d7ee14; }
+
+/* Equal, identical grid rows keep the loop seamless at the halfway point. */
+@keyframes contact-code-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(0, -50%, 0); }
+}
+
+@media (min-width: 1440px) {
+  .contact-code-editor { animation-duration: 92s; }
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .contact-code-editor { animation-duration: 68s; }
+}
+
+@media (max-width: 760px) {
+  .contact-code {
+    mask-image: linear-gradient(90deg, transparent, #000 75%), linear-gradient(transparent, #000 18%, #000 72%, transparent);
+  }
+
+  .contact-code-editor {
+    left: 18%;
+    opacity: .075;
+    font-size: 13px;
+    animation-duration: 64s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-code-editor {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* Let the longest full-size line reach the gap between the badge and the copy. */
+.contact-code-hero {
+  inset: 120px 53% 200px 0;
+  mask-image: linear-gradient(90deg, transparent, #000 28%, #000 95%, #0007), linear-gradient(transparent, #000 14%, #000 82%, transparent);
+}
+
+.contact-code-hero .contact-code-editor {
+  left: auto;
+  right: 0;
+  min-width: 0;
+  opacity: .09;
+  font-size: clamp(18px, 1.45vw, 22px);
+}
+
+@media (max-width: 900px) {
+  .contact-code-hero {
+    top: 110px;
+    right: 66.6667%;
+    bottom: auto;
+    height: 350px;
+    mask-image: linear-gradient(90deg, transparent, #000 28%, #000 88%, transparent), linear-gradient(transparent, #000 14%, #000 82%, transparent);
+  }
+
+  .contact-code-hero .contact-code-editor {
+    left: -116px;
+    right: auto;
+    min-width: 700px;
+    opacity: .075;
+    font-size: 18px;
+    animation-duration: 80s;
+  }
+}

@@ -1,0 +1,42 @@
+.lanyard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lanyard-canvas {
+  cursor: default;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.badge-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  isolation: isolate;
+}
+
+.badge-stage__scene {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 140ms ease-out;
+}
+
+.badge-stage.is-ready .badge-stage__scene {
+  opacity: 1;
+}
+
+.badge-stage:focus-visible {
+  outline: 2px solid #a7c5bc;
+  outline-offset: -6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .badge-stage__scene {
+    transition: none;
+  }
+}

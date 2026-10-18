@@ -1,0 +1,54 @@
+.workspace-section{padding-bottom:110px}
+.workspace-projects{display:grid;gap:56px}
+.workspace-window{--ws-mono:ui-monospace,SFMono-Regular,Consolas,monospace;background:#fff;border:1px solid #cbd9d5;border-radius:12px;overflow:hidden;box-shadow:0 24px 64px -32px #29363f30,0 2px 6px #29363f0a;color:#253039;scroll-margin-top:32px;min-width:0}
+.workspace-window svg{width:16px;height:16px}
+.workspace-toolbar{display:flex;align-items:center;justify-content:center;gap:16px;height:54px;padding:0 20px;background:#e9efed;border-bottom:1px solid #cbd9d5;position:relative;font-size:12px;font-weight:500}
+.workspace-window-dots{display:flex;gap:7px;position:absolute;left:19px}
+.workspace-window-dots i{display:block;width:10px;height:10px;border-radius:50%;background:#c4d2cc;border:1px solid #adbbb5}
+.workspace-title{display:flex;align-items:center;gap:7px;letter-spacing:-.01em}
+.workspace-title>svg{color:#315e7e}
+.workspace-extension{color:#68737b;font-weight:400;margin-left:-7px}
+.workspace-platform{position:absolute;right:20px;display:flex;align-items:center;gap:7px;color:#58656f;font-size:11px}
+.workspace-panel{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.25fr);min-height:550px}
+.workspace-overview{padding:38px clamp(28px,4vw,64px) 36px;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.workspace-copy{min-width:0}
+.workspace-comment{font:600 13px/1.6 var(--ws-mono);color:#36556a;letter-spacing:.01em;margin-bottom:28px;overflow-wrap:anywhere}
+.workspace-app-icon{width:48px;height:48px;border-radius:11px;margin-bottom:20px}
+.workspace-overview h3{font-size:clamp(32px,3.4vw,48px);letter-spacing:-.045em;line-height:1.1;font-weight:500;margin-bottom:20px}
+.workspace-description{font-size:16px;line-height:1.75;color:#59656d;max-width:38ch}
+.workspace-tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 12px;font:500 12px/1.5 var(--ws-mono);color:#36556a}
+.workspace-tags li{padding:6px 10px;background:#e4ece9;border:1px solid #cbd9d5;border-radius:6px}
+.workspace-store-link{display:inline-flex;align-self:flex-start;min-height:48px;padding:0;margin-top:auto;line-height:1;border-radius:7px}
+.workspace-store-link img{display:block;width:auto;height:48px}
+.workspace-store-link:focus-visible{outline:2px solid #46769a;outline-offset:5px;border-radius:2px}
+.workspace-previews{background:#e4ece9;border-left:1px solid #cbd9d5;min-width:0;display:flex;flex-direction:column}
+.workspace-preview-heading{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 22px;font-size:11px;color:#63717a}
+.workspace-preview-heading svg{width:12px;height:12px}
+.workspace-preview-device{margin-left:auto;color:#586872;font-family:var(--ws-mono);font-size:10px}
+.workspace-preview-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:clamp(16px,2vw,32px);padding:20px clamp(22px,3vw,44px) 30px;flex:1}
+.workspace-preview-images figure{margin:0;min-width:0}
+.workspace-preview-images img{width:100%;height:auto;max-height:480px;object-fit:contain;filter:drop-shadow(0 6px 10px #26333b12)}
+.workspace-preview-images figcaption{font:10px/1.6 var(--ws-mono);color:#586872;text-align:center;margin-top:18px;text-wrap:balance}
+@media(min-width:1440px){.workspace-panel{min-height:610px}.workspace-overview{padding-top:46px}.workspace-description{font-size:17px}}
+@media(max-width:1100px){.workspace-overview{padding:32px 28px}.workspace-description{font-size:14px}.workspace-tags{font-size:11px}.workspace-comment{font-size:12px}.workspace-store-link{font-size:13px}}
+@media(max-width:760px){.workspace-section{padding-bottom:70px}.workspace-projects{gap:36px}.workspace-toolbar{height:48px;padding:0 14px}.workspace-title{font-size:11px}.workspace-extension{display:none}.workspace-window-dots{left:13px;gap:5px}.workspace-window-dots i{width:7px;height:7px}.workspace-platform{right:13px;font-size:10px;gap:4px}.workspace-platform svg{width:12px;height:12px}.workspace-panel{grid-template-columns:minmax(0,1fr);min-height:0}.workspace-overview{padding:26px 24px 24px;display:flex;flex-direction:column;align-items:flex-start}.workspace-comment{margin-bottom:20px;font-size:12px}.workspace-app-icon{width:42px;height:42px;margin-bottom:16px}.workspace-overview h3{font-size:34px;margin-bottom:16px}.workspace-description{font-size:14px;max-width:52ch}.workspace-tags{margin:18px 0 12px;font-size:11px}.workspace-store-link{font-size:13px;margin-top:0;align-self:flex-start}.workspace-previews{border-left:0;border-top:1px solid #cbd9d5}.workspace-preview-heading{padding-inline:18px;font-size:10px}.workspace-preview-device{font-size:9px}.workspace-preview-images{padding:14px 24px 26px;gap:18px}.workspace-preview-images img{max-height:440px}.workspace-preview-images figcaption{margin-top:14px;font-size:9px}}
+@media(max-width:380px){.workspace-overview{padding-inline:18px}.workspace-toolbar{justify-content:flex-start;padding-left:55px}.workspace-title{font-size:10px;gap:5px}.workspace-title>svg{display:none}.workspace-preview-images{padding-inline:14px;gap:12px}.workspace-overview h3{font-size:30px}.workspace-description{font-size:13px}.workspace-comment{font-size:11px}.workspace-preview-images figcaption{font-size:8px}}
+
+
+/* Full-resolution app screens, presented at natural phone proportions. */
+.workspace-previews-kuni,.workspace-previews-papaya,.workspace-previews-athleats{background:#e4ece9}
+.workspace-preview-heading{background:#e9efed;border-bottom:1px solid #cbd9d5;color:#52616a}
+.workspace-preview-images{align-items:start;justify-items:center;padding:34px 30px 40px;gap:24px}
+.workspace-preview-images figure{width:100%;max-width:250px}
+.workspace-preview-images figure+figure{width:88%;margin-top:70px}
+.workspace-preview-images img{max-height:none;filter:none}
+.workspace-device{position:relative;background:#1b2023;padding:6px;border:1px solid #5c6265;border-radius:14% / 6.5%;box-shadow:0 22px 28px -16px #24323966,0 3px 5px #24323926}
+.workspace-device img{border-radius:11.5% / 5.3%}
+.workspace-device::after{content:"";position:absolute;top:2.4%;left:37%;width:26%;height:2.8%;border-radius:30px;background:#131719;pointer-events:none}
+.workspace-device-cropped{border-radius:calc(19.2308% + 4.31px) / calc(8.8594% + 5.76px)}
+.workspace-screen{position:relative;overflow:hidden;border-radius:19.2308% / 8.8594%;background:#f7f6f0}
+.workspace-screen img{position:absolute;max-width:none;height:auto;border-radius:0}
+.workspace-device-cropped::after{display:none}
+.workspace-preview-images figcaption{margin-top:22px;font-size:10px;line-height:1.6;color:#52616a}
+@media(max-width:1100px) and (min-width:761px){.workspace-preview-images{padding:30px 22px 32px;gap:20px}.workspace-preview-images figure+figure{margin-top:55px}.workspace-device{padding:5px}}
+@media(max-width:760px){.workspace-preview-images{padding:32px 24px;gap:36px;display:flex;flex-direction:column;align-items:center}.workspace-preview-images figure{width:82%;max-width:260px}.workspace-preview-images figure+figure{width:82%;margin-top:0}.workspace-device{padding:6px}.workspace-preview-images figcaption{font-size:10px;margin-top:20px}}
