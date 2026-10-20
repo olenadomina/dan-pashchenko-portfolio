@@ -44,6 +44,7 @@ export default function Badge({
   const topPixels = compact ? 155 : frame.height * (0.12 + 0.3 * strapLength);
   const cardSize = cardPixels / frame.height;
   const length = Math.max(0, (topPixels / frame.height - 0.12) / 0.3);
+  const restingTop = (0.12 + 0.3 * length) * frame.height;
   const anchor = compact ? 'center' : 'left';
   const ready = status === 'ready';
   const handleReady = useCallback(() => setStatus('ready'), []);
@@ -52,17 +53,17 @@ export default function Badge({
     const stage = stageRef.current;
     if (!stage) return;
     stage.dataset.cardTop = String(top);
-    stage.dispatchEvent(new Event('badge-bounds-change', { bubbles: true }));
   }, []);
 
   useLayoutEffect(() => {
     stageRef.current?.dispatchEvent(new Event('badge-bounds-change', { bubbles: true }));
-  }, [status, frame.width, frame.height]);
+  }, [status, frame.width, frame.height, restingTop]);
 
   return (
     <div
       ref={stageRef}
       className={`badge-stage ${ready ? 'is-ready' : status === 'error' ? 'is-fallback' : 'is-loading'} ${className}`.trim()}
+      data-card-rest-top={restingTop}
       role="button"
       tabIndex={status === 'loading' ? -1 : 0}
       aria-busy={status === 'loading'}

@@ -10,15 +10,13 @@ export default function SiteHeader() {
     const updatePosition = () => {
       const headerBounds = header.getBoundingClientRect();
       const stage = hero?.querySelector('.badge-stage');
-      const fallback = stage?.querySelector('.badge-fallback__card');
-      const projectedTop = stage?.dataset.cardTop;
-      const cardTop = fallback
-        ? fallback.getBoundingClientRect().top
-        : projectedTop !== undefined
-          ? stage.getBoundingClientRect().top + Number(projectedTop)
-          : null;
-      // The strap scrolls naturally through the transparent header. Fill starts
-      // only when the card itself crosses the header, completing over 24px.
+      const restingTop = stage?.dataset.cardRestTop;
+      const cardTop = restingTop !== undefined
+        ? stage.getBoundingClientRect().top + Number(restingTop)
+        : null;
+      // Only page scrolling should fill the header. Dragging, flipping or
+      // swinging the badge must not hide its strap behind an opaque header.
+      // Fade over 24px once the card's resting position crosses the header.
       const fill = !hero || hero.getBoundingClientRect().bottom <= headerBounds.bottom
         ? 1
         : cardTop === null ? 0 : Math.min(1, Math.max(0, (headerBounds.bottom - cardTop) / 24));
