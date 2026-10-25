@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useRef } from 'react';
 import './WorkSpace.css';
 import Typographic from './Typographic.jsx';
+import useWorkStack from './useWorkStack.js';
 
 const projects = [
   {
@@ -57,20 +58,17 @@ function AppPreview({ image }) {
 }
 
 export default function WorkSpace() {
-  useEffect(() => {
-    const id = window.location.hash.slice(1);
-    if (projects.some(project => project.id === id)) {
-      document.getElementById(id)?.scrollIntoView({ block: 'start' });
-    }
-  }, []);
+  const sectionRef = useRef(null);
+  // Also scrolls to a project named in the URL hash.
+  useWorkStack(sectionRef);
 
-  return <Typographic><section id="work" className="work-section workspace-section" aria-labelledby="work-title">
+  return <Typographic><section ref={sectionRef} id="work" className="work-section workspace-section" aria-labelledby="work-title">
     <div className="section-heading">
       <div><p className="eyebrow section-label">SELECTED WORK</p><h2 id="work-title">Built for real life.</h2></div>
       <p className="section-intro">A few apps I’ve helped bring into people’s everyday lives.</p>
     </div>
 
-    <div className="workspace-projects">
+    <div className="workspace-projects"><div className="workspace-deck">
       {projects.map(project => <article key={project.id} id={project.id} className="workspace-window" aria-labelledby={`title-${project.id}`}>
         <header className="workspace-toolbar">
           <div className="workspace-window-dots" aria-hidden="true"><i /><i /><i /></div>
@@ -97,6 +95,6 @@ export default function WorkSpace() {
           </div>
         </div>
       </article>)}
-    </div>
+    </div></div>
   </section></Typographic>;
 }

@@ -1,5 +1,5 @@
 .workspace-section{padding-bottom:110px}
-.workspace-projects{display:grid;gap:56px}
+.workspace-deck{display:grid;gap:56px}
 .workspace-window{--ws-mono:ui-monospace,SFMono-Regular,Consolas,monospace;background:#fff;border:1px solid #cbd9d5;border-radius:12px;overflow:hidden;box-shadow:0 24px 64px -32px #29363f30,0 2px 6px #29363f0a;color:#253039;scroll-margin-top:32px;min-width:0}
 .workspace-window svg{width:16px;height:16px}
 .workspace-toolbar{display:flex;align-items:center;justify-content:center;gap:16px;height:54px;padding:0 20px;background:#e9efed;border-bottom:1px solid #cbd9d5;position:relative;font-size:12px;font-weight:500}
@@ -31,7 +31,7 @@
 .workspace-preview-images figcaption{font:10px/1.6 var(--ws-mono);color:#586872;text-align:center;margin-top:18px;text-wrap:balance}
 @media(min-width:1440px){.workspace-panel{min-height:610px}.workspace-overview{padding-top:46px}.workspace-description{font-size:17px}}
 @media(max-width:1100px){.workspace-overview{padding:32px 28px}.workspace-description{font-size:14px}.workspace-tags{font-size:11px}.workspace-comment{font-size:12px}.workspace-store-link{font-size:13px}}
-@media(max-width:760px){.workspace-section{padding-bottom:70px}.workspace-projects{gap:36px}.workspace-toolbar{height:48px;padding:0 14px}.workspace-title{font-size:11px}.workspace-extension{display:none}.workspace-window-dots{left:13px;gap:5px}.workspace-window-dots i{width:7px;height:7px}.workspace-platform{right:13px;font-size:10px;gap:4px}.workspace-platform svg{width:12px;height:12px}.workspace-panel{grid-template-columns:minmax(0,1fr);min-height:0}.workspace-overview{padding:26px 24px 24px;display:flex;flex-direction:column;align-items:flex-start}.workspace-comment{margin-bottom:20px;font-size:12px}.workspace-app-icon{width:42px;height:42px;margin-bottom:16px}.workspace-overview h3{font-size:34px;margin-bottom:16px}.workspace-description{font-size:14px;max-width:52ch}.workspace-tags{margin:18px 0 12px;font-size:11px}.workspace-store-link{font-size:13px;margin-top:0;align-self:flex-start}.workspace-previews{border-left:0;border-top:1px solid #cbd9d5}.workspace-preview-heading{padding-inline:18px;font-size:10px}.workspace-preview-device{font-size:9px}.workspace-preview-images{padding:14px 24px 26px;gap:18px}.workspace-preview-images img{max-height:440px}.workspace-preview-images figcaption{margin-top:14px;font-size:9px}}
+@media(max-width:760px){.workspace-section{padding-bottom:70px}.workspace-deck{gap:36px}.workspace-toolbar{height:48px;padding:0 14px}.workspace-title{font-size:11px}.workspace-extension{display:none}.workspace-window-dots{left:13px;gap:5px}.workspace-window-dots i{width:7px;height:7px}.workspace-platform{right:13px;font-size:10px;gap:4px}.workspace-platform svg{width:12px;height:12px}.workspace-panel{grid-template-columns:minmax(0,1fr);min-height:0}.workspace-overview{padding:26px 24px 24px;display:flex;flex-direction:column;align-items:flex-start}.workspace-comment{margin-bottom:20px;font-size:12px}.workspace-app-icon{width:42px;height:42px;margin-bottom:16px}.workspace-overview h3{font-size:34px;margin-bottom:16px}.workspace-description{font-size:14px;max-width:52ch}.workspace-tags{margin:18px 0 12px;font-size:11px}.workspace-store-link{font-size:13px;margin-top:0;align-self:flex-start}.workspace-previews{border-left:0;border-top:1px solid #cbd9d5}.workspace-preview-heading{padding-inline:18px;font-size:10px}.workspace-preview-device{font-size:9px}.workspace-preview-images{padding:14px 24px 26px;gap:18px}.workspace-preview-images img{max-height:440px}.workspace-preview-images figcaption{margin-top:14px;font-size:9px}}
 @media(max-width:380px){.workspace-overview{padding-inline:18px}.workspace-toolbar{justify-content:flex-start;padding-left:55px}.workspace-title{font-size:10px;gap:5px}.workspace-title>svg{display:none}.workspace-preview-images{padding-inline:14px;gap:12px}.workspace-overview h3{font-size:30px}.workspace-description{font-size:13px}.workspace-comment{font-size:11px}.workspace-preview-images figcaption{font-size:8px}}
 
 
@@ -52,3 +52,16 @@
 .workspace-preview-images figcaption{margin-top:22px;font-size:10px;line-height:1.6;color:#52616a}
 @media(max-width:1100px) and (min-width:761px){.workspace-preview-images{padding:30px 22px 32px;gap:20px}.workspace-preview-images figure+figure{margin-top:55px}.workspace-device{padding:5px}}
 @media(max-width:760px){.workspace-preview-images{padding:32px 24px;gap:36px;display:flex;flex-direction:column;align-items:center}.workspace-preview-images figure{width:82%;max-width:260px}.workspace-preview-images figure+figure{width:82%;margin-top:0}.workspace-device{padding:6px}.workspace-preview-images figcaption{font-size:10px;margin-top:20px}}
+
+/* Stacked cases on large screens (useWorkStack sets the sizes and per-card motion):
+   the deck pins below the header, and each next window slides over the previous one,
+   which steps back 14px, shrinks 5% and darkens. */
+.workspace-section[data-stack] .workspace-projects{height:calc(var(--stack-deck-h) + var(--stack-length))}
+.workspace-section[data-stack] .workspace-deck{position:sticky;top:var(--stack-top);display:block;height:var(--stack-deck-h)}
+.workspace-section[data-stack] .workspace-window{position:absolute;top:0;left:0;right:0;height:var(--stack-card-h);display:flex;flex-direction:column;transform-origin:50% 0;will-change:transform}
+.workspace-section[data-stack] .workspace-window::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;background:#0d2228;opacity:var(--shade,0);pointer-events:none}
+.workspace-section[data-stack] .workspace-panel{flex:1;min-height:0}
+/* Phones scale with the card height so both screens fit inside one window. */
+.workspace-section[data-stack] .workspace-preview-images{padding:24px 30px 28px}
+.workspace-section[data-stack] .workspace-preview-images figure{max-width:min(250px,calc((var(--stack-card-h) - 244px) * .45))}
+.workspace-section[data-stack] .workspace-preview-images figure+figure{margin-top:40px}
