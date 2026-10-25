@@ -6,7 +6,7 @@ Primary reference: Apple Xcode Preview interface, https://developer.apple.com/xc
 
 Secondary reference: the existing portfolio owns the typography, generous section spacing, neutral paper/graphite colours and full app images. Refero style searches returned no results. Bundled Refero craft guidance informs visible keyboard focus and adequately sized controls.
 
-All three projects are visible one below another, each with a quiet Xcode-style titlebar, project overview and full previews. Navigator, tabs, selection state and Next project controls have been removed at the user's request. Existing project hashes are native article anchors.
+All three projects are visible one below another, each with a quiet Xcode-style titlebar, project overview and full previews. Navigator, tabs, selection state and Next project controls have been removed at the user's request. Existing project hashes are article anchors. On large screens the windows stack into a scroll-driven deck; see the case stacking entry in design-reference.md.
 
 Use real app icons, full portrait screenshots, existing verified contribution copy and one official App Store badge per project at the bottom of the desktop overview, with the text at its original top position. Mobile keeps the natural content order. The unmodified SVG comes from https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg and renders at 48px high. Do not invent source code, build results, app behaviour or working IDE controls. Decorative window dots are not buttons.
 
