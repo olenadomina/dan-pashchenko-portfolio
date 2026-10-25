@@ -9,13 +9,8 @@
 .skills-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,5vw,80px);row-gap:28px}
 .skills-group{min-width:0;padding-top:20px;border-top:1px solid #cbd9d5}
 .skills-group h3{font-size:16px;font-weight:500;letter-spacing:-.02em;line-height:1.5;margin:0 0 12px;color:#202b36}
-.skills-tags{display:flex;flex-wrap:wrap;gap:7px;margin:-10px -6px;padding:10px 6px;list-style:none;overflow:clip}
+.skills-tags{display:flex;flex-wrap:wrap;gap:7px;margin:0;padding:0;list-style:none}
 .skills-tags li{max-width:100%;padding:6px 11px;border:1px solid #cbd9d5;border-radius:999px;background:#e4ece9;color:#202b36;font:500 12px/1.5 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:nowrap}
-@media(prefers-reduced-motion:no-preference){
-  .skills-group[data-motion="waiting"] .skills-tags li{opacity:0}
-  .skills-group[data-motion="falling"] .skills-tags li{will-change:transform,opacity}
-}
-@media print{.skills-tags li{opacity:1!important;transform:none!important}}
 @media(hover:hover) and (pointer:fine){.skills-resume:hover{background:#18363b;color:#a7c5bc;text-decoration:none}}
 @media(max-width:760px){
   .skills-section{padding-block:56px 60px}

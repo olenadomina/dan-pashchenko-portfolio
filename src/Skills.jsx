@@ -1,15 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Typographic from './Typographic.jsx';
 import RollingText from './RollingText.jsx';
 import { skillGroups } from './skills-data.js';
-import useSkillEntrance from './useSkillEntrance.js';
 import './Skills.css';
 
 export default function Skills({ resumeUrl = '/documents/dan-pashchenko-resume.pdf' }) {
-  const sectionRef = useRef(null);
-  useSkillEntrance(sectionRef);
-
-  return <Typographic><section ref={sectionRef} className="skills-section" id="skills" aria-labelledby="skills-title">
+  return <Typographic><section className="skills-section" id="skills" aria-labelledby="skills-title">
     <div className="skills-inner">
       <header className="skills-heading">
         <div>
