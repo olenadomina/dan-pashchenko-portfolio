@@ -6,4 +6,7 @@ dist/
 !.env.example
 qa/
 output/
+.claude/
+premium-audit.json
+*.log
 .vercel

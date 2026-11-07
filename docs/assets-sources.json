@@ -1,0 +1,50 @@
+[
+  {
+    "file": "public/images/kuni-preview-1.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/90/4e/29/904e290c-10a1-f8e1-1518-2a815c95fc19/mzl.ewetmgiy.jpg/1290x2796bb.webp",
+    "width": 1242,
+    "height": 2688,
+    "format": "webp",
+    "bytes": 328066
+  },
+  {
+    "file": "public/images/kuni-preview-2.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/3e/2b/50/3e2b5065-0f70-73aa-c50f-c27f83cb374b/mzl.mktqxnni.jpg/1290x2796bb.webp",
+    "width": 1242,
+    "height": 2688,
+    "format": "webp",
+    "bytes": 94548
+  },
+  {
+    "file": "public/images/papaya-preview-1.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/87/05/d3/8705d397-a880-7a2d-59ae-f95b1ebbb813/IMG_68143692A285-1.jpeg/1290x2796bb.webp",
+    "width": 1290,
+    "height": 2796,
+    "format": "webp",
+    "bytes": 69478
+  },
+  {
+    "file": "public/images/papaya-preview-2.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/14/3e/64143edb-f49c-bde8-5926-6f50e5fc121d/47cf2c82-55e8-4103-9e45-dbfdc5899ce6_ss3.png/1290x2796bb.webp",
+    "width": 1290,
+    "height": 2796,
+    "format": "webp",
+    "bytes": 76914
+  },
+  {
+    "file": "public/images/athleats-preview-1.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e7/8f/43/e78f4378-e7f9-0244-33ad-66e6f87ac4f8/app-store-screenshots05.png/1290x2796bb.webp",
+    "width": 1284,
+    "height": 2778,
+    "format": "webp",
+    "bytes": 147220
+  },
+  {
+    "file": "public/images/athleats-preview-2.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d8/54/3d/d8543d54-865c-b3a7-38bd-0334491ac6fc/app-store-screenshots04.png/1290x2796bb.webp",
+    "width": 1284,
+    "height": 2778,
+    "format": "webp",
+    "bytes": 157274
+  }
+]

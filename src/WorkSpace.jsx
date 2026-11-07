@@ -5,16 +5,6 @@ import useWorkStack from './useWorkStack.js';
 
 const projects = [
   {
-    id: 'kuni', name: 'KUNI Cam', category: 'Photo & video', icon: 'kuni.png',
-    description: 'Photo and video editing with an analog feel. I established the technical foundation and implemented around 90% of the product over two years.',
-    tags: ['iOS', 'Image processing', 'Video'],
-    url: 'https://apps.apple.com/us/app/kuni-cam-photo-video-editor/id1336488891',
-    images: [
-      { src: 'kuni-preview-1.webp', width: 1242, height: 2688, alt: 'KUNI Cam film grain and dust effects on a skateboard photograph', caption: 'Film textures & effects' },
-      { src: 'kuni-preview-2.webp', width: 1242, height: 2688, alt: 'KUNI Cam custom photo presets applied to a food photograph', caption: 'Custom photo presets' }
-    ]
-  },
-  {
     id: 'papaya', name: 'Papaya for HS', category: 'Health & wellbeing', icon: 'papaya.png',
     description: 'A companion for managing hidradenitis suppurativa. I took an existing MVP into production and delivered 28 App Store releases.',
     tags: ['Swift', 'SwiftUI', 'iOS'],
@@ -27,11 +17,21 @@ const projects = [
   {
     id: 'athleats', name: 'Athleats', category: 'Nutrition & performance', icon: 'athleats.png',
     description: 'Performance recipes, meal planning and macro tracking, all in one app.',
-    tags: ['Recipes', 'Meal planning', 'Macro tracking'],
+    tags: ['Swift', 'SwiftUI', 'Supabase'],
     url: 'https://apps.apple.com/ua/app/athleats-performance-recipes/id6754655851',
     images: [
       { src: 'athleats-preview-1.webp', width: 1284, height: 2778, screen: { x: 225, y: 744, width: 832, height: 1806 }, alt: 'Athleats Greek meatball bowl recipe with macros and nutrition', caption: 'Recipes & nutrition' },
       { src: 'athleats-preview-2.webp', width: 1284, height: 2778, screen: { x: 225, y: 744, width: 832, height: 1806 }, alt: 'Athleats saved recipe collections for workouts and everyday meals', caption: 'Personal recipe collections' }
+    ]
+  },
+  {
+    id: 'kuni', name: 'KUNI Cam', category: 'Photo & video', icon: 'kuni.png',
+    description: 'Photo and video editing with an analog feel. I established the technical foundation and implemented around 90% of the product over two years.',
+    tags: ['iOS', 'Image processing', 'Video'],
+    url: 'https://apps.apple.com/us/app/kuni-cam-photo-video-editor/id1336488891',
+    images: [
+      { src: 'kuni-preview-1.webp', width: 1242, height: 2688, alt: 'KUNI Cam film grain and dust effects on a skateboard photograph', caption: 'Film textures & effects' },
+      { src: 'kuni-preview-2.webp', width: 1242, height: 2688, alt: 'KUNI Cam custom photo presets applied to a food photograph', caption: 'Custom photo presets' }
     ]
   }
 ];

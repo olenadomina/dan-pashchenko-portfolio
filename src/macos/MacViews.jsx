@@ -15,16 +15,6 @@ const profiles = [
 
 const projects = [
   {
-    id: 'kuni', name: 'KUNI Cam', category: 'Photo & video', icon: 'kuni.png',
-    description: 'Photo and video editing with an analog feel. I established the technical foundation and implemented around 90% of the product over two years.',
-    tags: ['iOS', 'Image processing', 'Video'],
-    url: 'https://apps.apple.com/us/app/kuni-cam-photo-video-editor/id1336488891',
-    images: [
-      { src: 'kuni-preview-1.webp', width: 1242, height: 2688, alt: 'KUNI Cam film grain and dust effects on a skateboard photograph', caption: 'Film textures & effects' },
-      { src: 'kuni-preview-2.webp', width: 1242, height: 2688, alt: 'KUNI Cam custom photo presets applied to a food photograph', caption: 'Custom photo presets' },
-    ],
-  },
-  {
     id: 'papaya', name: 'Papaya for HS', category: 'Health & wellbeing', icon: 'papaya.png',
     description: 'A companion for managing hidradenitis suppurativa. I took an existing MVP into production and delivered 28 App Store releases.',
     tags: ['Swift', 'SwiftUI', 'iOS'],
@@ -37,13 +27,23 @@ const projects = [
   {
     id: 'athleats', name: 'Athleats', category: 'Nutrition & performance', icon: 'athleats.png',
     description: 'Performance recipes, meal planning and macro tracking, all in one app.',
-    tags: ['Recipes', 'Meal planning', 'Macro tracking'],
+    tags: ['Swift', 'SwiftUI', 'Supabase'],
     url: 'https://apps.apple.com/ua/app/athleats-performance-recipes/id6754655851',
     images: [
       { src: 'athleats-preview-1.webp', width: 1284, height: 2778, screen: { x: 225, y: 744, width: 832, height: 1806 }, alt: 'Athleats Greek meatball bowl recipe with macros and nutrition', caption: 'Recipes & nutrition' },
       { src: 'athleats-preview-2.webp', width: 1284, height: 2778, screen: { x: 225, y: 744, width: 832, height: 1806 }, alt: 'Athleats saved recipe collections for workouts and everyday meals', caption: 'Personal recipe collections' },
     ],
   },
+  {
+    id: 'kuni', name: 'KUNI Cam', category: 'Photo & video', icon: 'kuni.png',
+    description: 'Photo and video editing with an analog feel. I established the technical foundation and implemented around 90% of the product over two years.',
+    tags: ['iOS', 'Image processing', 'Video'],
+    url: 'https://apps.apple.com/us/app/kuni-cam-photo-video-editor/id1336488891',
+    images: [
+      { src: 'kuni-preview-1.webp', width: 1242, height: 2688, alt: 'KUNI Cam film grain and dust effects on a skateboard photograph', caption: 'Film textures & effects' },
+      { src: 'kuni-preview-2.webp', width: 1242, height: 2688, alt: 'KUNI Cam custom photo presets applied to a food photograph', caption: 'Custom photo presets' },
+    ],
+  }
 ];
 
 const topics = [
@@ -86,15 +86,15 @@ export function OverviewView({ navigate }) {
       <ProfilePhoto large />
       <div className="mac-profile-identity"><p className="mac-profile-kicker">Independent iOS engineer</p><h1>Dan Pashchenko</h1><p className="mac-profile-promise">Clean & stable code. Great value for money.</p></div>
     </div>
-    <p className="mac-overview-description">I build native apps from the first prototype and help existing products become more reliable and easier to maintain.</p>
+    <p className="mac-overview-description">I build native apps from scratch and help take existing products to the next level.</p>
     <div className="mac-content-actions">
       <a className="mac-content-button mac-content-button-primary" href={`mailto:${email}`}><MacIcon name="mail" /><span>Email Dan</span></a>
       <ResumeLink />
     </div>
 
     <dl className="mac-experience-strip" aria-label="Experience at a glance">
-      <div><dd>13</dd><dt>years in iOS</dt></div>
-      <div><dd>11</dd><dt>years in Swift</dt></div>
+      <div><dd>14</dd><dt>years in iOS</dt></div>
+      <div><dd>12</dd><dt>years in Swift</dt></div>
       <div><dd>40+</dd><dt>iOS apps made</dt></div>
       <div><dd>20</dd><dt>years in IT</dt></div>
     </dl>
